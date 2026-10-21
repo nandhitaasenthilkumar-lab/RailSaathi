@@ -5,7 +5,7 @@ import AssistanceDashboard from "./components/AssistanceDashboard";
 import ObstaclePanel from "./components/ObstaclePanel";
 import "./App.css";
 
-const API = "http://localhost:5000/api";
+const API = import.meta.env.VITE_API_URL;
 
 function getSavedUser() {
   try {
